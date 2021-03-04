@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/4.5/examples/sign-in/signin.css" rel="stylesheet">
+<head>
+    <title>BBANK</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+</head>
+<style>
+    .a{ margin-bottom:10px;}
+</style>
+<body class="text-center">
+<form class="form-signin" method="post" th:action="@{/registration}" >
+    <img class="mb-4" src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <div class="alert alert-danger" role="alert"  th:if="${error}">
+        User exists or incorrect card number
+    </div>
+    <div class="alert alert-success" role="alert"  th:if="${message}">
+        Successfully registration.
+    </div>
+    </div>
+    <input name="username" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+    <input name="card" class="form-control a" type="tel"  maxlength="19" placeholder="Card Number">
+    <div class="checkbox mb-3">
+        <label >
+            <a href="/login" type="login" value="login">Sing in</a>
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Registration</button>
+    <p class="mt-5 mb-3 text-muted">© 2017-2020</p>
+</form>
+</body>
+</html>
