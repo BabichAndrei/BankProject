@@ -15,11 +15,13 @@
 ## Visuals  
 
 - Main page  
-![gif](https://i.postimg.cc/dtppt4s0/ezgif-com-optimize.gif)
-- Testing page  
-![gif2](https://i.postimg.cc/0jYKDVHF/ezgif-com-gif-maker-3.gif)
-- Goal page  
-![gif3](https://i.postimg.cc/k4cB526P/ezgif-com-gif-maker-5.gif)
+![png](https://i.postimg.cc/XqYPxxfC/image.png)
+- List of transactions  
+![png2](https://i.postimg.cc/8zRbJMWQ/image.png)
+- Service 
+![png3](https://i.postimg.cc/8zRbJMWQ/image.png)
+- Settings
+![png4](https://i.postimg.cc/nLdSrqbV/image.png)
 
 ## Technologies
 Main technologies we used:  
